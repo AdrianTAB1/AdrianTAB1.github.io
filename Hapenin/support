@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Hapenin</title>
+<style>
+  :root {
+    --ink: #16161a;
+    --ink-soft: #4a4a52;
+    --rule: #e2e2e6;
+    --accent: #3f3fd1;
+    --panel: #f2f2f7;
+    --bg: #fbfbfa;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 3rem 1.25rem 6rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 1.25rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 .5rem; letter-spacing: -0.02em; }
+  .meta { color: var(--ink-soft); font-size: .875rem; margin: 0; }
+  h2 {
+    font-size: 1.0625rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    margin: 3rem 0 1rem;
+    padding-bottom: .4rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h3 { font-size: 1.0625rem; margin: 1.75rem 0 .35rem; }
+  p, li { color: var(--ink-soft); }
+  p { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.15rem; margin: 0 0 1rem; }
+  li { margin-bottom: .4rem; }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--accent); }
+  .contact {
+    background: var(--panel);
+    border-radius: 6px;
+    padding: 1.25rem 1.35rem;
+    margin: 0 0 1rem;
+  }
+  .contact p:last-child { margin-bottom: 0; }
+  .contact .email { font-size: 1.125rem; font-weight: 600; }
+  footer { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); font-size: .875rem; color: var(--ink-soft); }
+  @media (max-width: 480px) { body { padding-top: 2rem; } h1 { font-size: 1.625rem; } }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Hapenin Support</h1>
+  <p class="meta">Last updated: 23 July 2026</p>
+</header>
+
+<div class="contact">
+  <p class="email"><a href="mailto:adrian.bucknell@gmail.com">adrian.bucknell@gmail.com</a></p>
+  <p>Email us with any question, bug, or account request. We reply within 2 business days. Hapenin is built and supported from Australia (AEST), so replies may arrive outside your working hours.</p>
+</div>
+
+<p>To help us fix things faster, include your device model, iOS version, and the app version from <strong>Settings → About</strong>.</p>
+
+<h2>Common questions</h2>
+
+<h3>I can't check in to a venue</h3>
+<p>Check-in confirms you're physically at the venue, so it needs location access and it needs you to be on site. If it isn't working:</p>
+<ul>
+  <li>Open iOS <strong>Settings → Hapenin → Location</strong> and set it to <strong>While Using the App</strong>, with <strong>Precise Location</strong> on.</li>
+  <li>Make sure you're inside or immediately outside the venue — GPS is less accurate indoors and in dense areas, so give it a few seconds to settle.</li>
+  <li>If the venue isn't listed at all, email us the name and address and we'll add it.</li>
+</ul>
+
+<h3>Nobody is showing at a venue near me</h3>
+<p>Hapenin only shows people who have checked in. Early on, and on quiet nights, venues will look empty because they are — the app isn't estimating or guessing crowd numbers.</p>
+
+<h3>My scan credits didn't arrive</h3>
+<p>Purchases occasionally stall between Apple and the app. Try <strong>Settings → Restore Purchases</strong> first. If credits are still missing, email us with the date of purchase and we'll sort it. Apple handles refunds directly — see <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>How do I report or block someone?</h3>
+<p>Tap the <strong>•••</strong> menu on any profile or message and choose <strong>Report</strong> or <strong>Block</strong>. Blocking is immediate and mutual — you disappear from each other entirely. We review every report and remove accounts that break our rules.</p>
+<p>If you feel unsafe, contact local police first. In Australia, call 000.</p>
+
+<h3>Who can see my profile?</h3>
+<p>Only people you've accepted as Friends see your full profile. At a venue, others see limited signals without your name or photos. Friendship is always mutual — nobody can add you without your approval.</p>
+
+<h3>I'm not getting notifications</h3>
+<p>Check iOS <strong>Settings → Hapenin → Notifications</strong> is enabled, then <strong>Settings → Notifications</strong> in the app to confirm the specific types you want are on. Focus modes and Low Power Mode can also delay delivery.</p>
+
+<h3>How do I change my email or password?</h3>
+<p><strong>Settings → Account Details</strong>. If you're locked out, use <strong>Forgot Password</strong> on the sign-in screen, or email us.</p>
+
+<h2>Deleting your account</h2>
+
+<p>In the app: <strong>Settings → Account Details → Delete Account</strong>.</p>
+<p>This is permanent. Your account, profile, photos, check-in history, friend connections, and messages are removed within 30 days. Unused scan credits are forfeited. If you can't access the app to delete your account, email us from your registered address and we'll do it for you.</p>
+
+<h2>Your data</h2>
+
+<p>To request a copy of your data, correct it, or ask us to stop processing it, email <a href="mailto:adrian.bucknell@gmail.com">adrian.bucknell@gmail.com</a>. We respond within one month.</p>
+<p>Full details are in our <a href="../privacy/">Privacy Policy</a>.</p>
+
+<h2>Reporting a bug</h2>
+
+<p>Send us:</p>
+<ol>
+  <li>What you were doing when it happened</li>
+  <li>What you expected, and what happened instead</li>
+  <li>A screenshot or screen recording if you have one</li>
+  <li>Device model, iOS version, and app version</li>
+</ol>
+
+<footer>
+  Hapenin · <a href="mailto:adrian.bucknell@gmail.com">adrian.bucknell@gmail.com</a> · <a href="../privacy/">Privacy Policy</a>
+</footer>
+
+</main>
+</body>
+</html>
