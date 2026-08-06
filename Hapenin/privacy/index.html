@@ -1,9 +1,9 @@
 # Hapenin Privacy Policy
 
-**Last updated:** 17/07/2026  
-**Effective:** 17/07/2026
+**Last updated:** 6/08/2026  
+**Effective:** 6/08/2026
 
-Hapenin is operated by **Adrian Bucknell**, Australia (“Hapenin”, “we”, “us”).
+Hapenin is operated by **Adrian Bucknell**, Australia ("Hapenin", "we", "us").
 
 This policy explains what personal information we collect, why we collect it, how it is used, and the choices available to you.
 
@@ -25,7 +25,7 @@ At venues, users may see profile information such as:
 - Interests
 - Country of origin, if the user has selected **Visible**
 
-These profiles do not display the user’s real name, username, or profile photos.
+These profiles do not display the user's real name, username, or profile photos.
 
 ### Venue chat
 
@@ -40,6 +40,10 @@ Friendship requires mutual acceptance. Friends may see a fuller profile, includi
 A country marked **Hidden** remains hidden from other users, including Friends.
 
 Users can remove Friends, block users, and hide their activity from specific users.
+
+### Buy Me a Drink
+
+When a user sends a drink, the recipient sees the **sender's first name**. This is not optional — all drink sends reveal who sent them. No message is attached to a drink.
 
 ---
 
@@ -94,9 +98,19 @@ With your permission, we collect precise location while you use the app to:
 - Provide venue scans and matching
 - Determine when you leave a venue
 
-Background or “Always” location is optional and is used only if you enable Auto Check-in.
+Background or "Always" location is optional and is used only if you enable Auto Check-in.
 
-You can change location permissions through iOS Settings.
+You can change location permissions through your device's settings.
+
+### Payment information
+
+**Scan-pack purchases** are processed by Apple (App Store) or Google (Google Play). We do not receive your complete payment-card details for these purchases.
+
+**Buy Me a Drink payments** are processed by **Stripe**. When you send or receive a drink payment:
+
+- We store a record of the transaction, including sender and recipient identifiers, the venue, the amount, and the Stripe payment intent identifier.
+- We do not store, process, or have access to your full payment-card number, expiry date, or CVV. This information is collected and processed directly by Stripe.
+- If you set up a Stripe Connect account to receive drink payments, we store your Stripe Connect account identifier to route payments to you. Stripe collects and processes your bank account details, identity verification documents, and other information required for its onboarding and regulatory obligations directly — Hapenin does not receive or store this information.
 
 ### Activity and social information
 
@@ -105,13 +119,12 @@ We may collect:
 - Current and previous check-ins
 - Friend connections and requests
 - Venue chat messages
+- Drink transaction records (sender, recipient, venue, amount, status)
 - Blocked and restricted user lists
 - Content reports
 - Scan-pack purchases
 - Device push-notification tokens
 - Crash and usage diagnostics
-
-Apple processes App Store payments. We do not receive your complete payment-card details.
 
 ---
 
@@ -125,6 +138,8 @@ We use personal information to:
 - Personalise venue matching
 - Display profile information according to your visibility choices
 - Deliver venue chat and Friend features
+- Process and record Buy Me a Drink payments between users
+- Reveal the sender's identity to the drink recipient
 - Send notifications you have enabled
 - Process scan-pack purchases
 - Investigate abuse and enforce our rules
@@ -152,7 +167,7 @@ You may:
 - Change its visibility
 - Remove it and withdraw consent
 
-Withdrawing consent does not affect your ability to use Hapenin’s other features. It stops future country-based processing and matching after the information is removed.
+Withdrawing consent does not affect your ability to use Hapenin's other features. It stops future country-based processing and matching after the information is removed.
 
 Selecting **Hidden** only controls display to other users. It does not withdraw consent to matching. To stop country-based matching, remove your country of origin or use the withdrawal control provided in your profile settings.
 
@@ -170,6 +185,7 @@ We process information necessary to:
 - Provide venue discovery and check-ins
 - Deliver venue chat and Friend features
 - Provide purchased scan packs
+- Process Buy Me a Drink payments, including recording transactions, routing payments via Stripe Connect, and revealing the sender's identity to the recipient
 
 ### Consent
 
@@ -178,6 +194,7 @@ We rely on consent for:
 - Optional country-of-origin processing
 - Optional background location and Auto Check-in
 - Push notifications
+- Setting up a Stripe Connect account to receive drink payments (opt-in)
 - Other optional features where consent is requested
 
 Where country of origin constitutes special-category data, we rely on explicit consent under Article 9(2)(a), in addition to Article 6(1)(a).
@@ -194,11 +211,11 @@ We may rely on legitimate interests for:
 - Improving reliability
 - Producing appropriately aggregated analytics
 
-We consider the effect of this processing on users’ rights before relying on legitimate interests.
+We consider the effect of this processing on users' rights before relying on legitimate interests.
 
 ### Legal obligations
 
-We process or retain information where required by applicable law.
+We process or retain information where required by applicable law, including payment and financial record-keeping obligations.
 
 ---
 
@@ -214,6 +231,7 @@ We may provide venues with aggregated statistics, such as attendance totals or d
 - Individual country selections
 - Names or usernames
 - Contact details
+- Payment or drink transaction details
 - Information intended to let a venue identify a particular user
 
 We apply aggregation safeguards designed to reduce the risk of identifying individual users.
@@ -225,11 +243,14 @@ We apply aggregation safeguards designed to reduce the risk of identifying indiv
 We use service providers to operate Hapenin, including:
 
 - **Supabase** — authentication, databases, file storage, and server functions
+- **Stripe** — payment processing for Buy Me a Drink, including Stripe Connect onboarding, identity verification, bank account details, and payment routing
 - **Google Firebase Cloud Messaging** — push notifications
 - **Google** — Google Sign-in and Places services
 - **Apple** — App Store distribution, Sign in with Apple, and in-app purchases
 
 These providers process information according to their own privacy terms and their agreements with us.
+
+Stripe processes payment-card details, bank account information, and identity verification documents directly. Hapenin does not receive or store this information. Stripe's privacy policy is available at [stripe.com/privacy](https://stripe.com/privacy).
 
 We may also disclose information:
 
@@ -246,7 +267,7 @@ Hapenin is operated from Australia. Our providers may process information in Aus
 
 Where European or UK law requires transfer safeguards, we use recognised mechanisms such as Standard Contractual Clauses or other legally approved safeguards.
 
-You may request further information by contacting [SUPPORT EMAIL].
+You may request further information by contacting adrian.bucknell@gmail.com.
 
 ---
 
@@ -261,9 +282,11 @@ Typical retention periods are:
 - **Active check-ins:** until checkout, departure, or automatic expiry
 - **Check-in history:** while the account remains active, unless deleted sooner
 - **Venue chat messages:** up to 24 hours
-- **Content reports:** [INSERT RETENTION PERIOD]
-- **Purchase records:** [INSERT RETENTION PERIOD]
-- **Diagnostics:** [INSERT RETENTION PERIOD]
+- **Drink transaction records:** while the account remains active, or as required for financial record-keeping obligations
+- **Stripe Connect account identifier:** while the account remains active or until the user disconnects their payment account
+- **Content reports:** up to 12 months after resolution
+- **Purchase records:** up to 7 years for financial and tax record-keeping
+- **Diagnostics:** up to 12 months
 - **Deleted accounts:** personal information removed or de-identified within 30 days, unless longer retention is legally required
 
 Aggregated information that can no longer reasonably be associated with an individual may be retained longer.
@@ -285,10 +308,13 @@ Account deletion permanently removes or de-identifies your:
 - Friend connections
 - Check-in information
 - Messages
+- Drink transaction records (sender and recipient identifiers are removed or de-identified)
 
-Deletion is completed within 30 days, except where information must be retained by law.
+Deletion is completed within 30 days, except where information must be retained by law (for example, financial transaction records may be retained in anonymised form for tax and regulatory purposes).
 
-Unused scan credits are forfeited. Refund requests are handled according to Apple’s App Store policies.
+Unused scan credits are forfeited. Scan-pack refund requests are handled according to Apple's App Store or Google Play policies.
+
+Your Stripe Connect account is not automatically deleted when you delete your Hapenin account. You can close your Stripe account separately through Stripe's dashboard or by contacting Stripe support.
 
 ---
 
@@ -302,6 +328,7 @@ You can:
 - Withdraw country-processing consent
 - Change location permissions
 - Disable notifications
+- Enable or disable receiving drink payments
 - Block or restrict users
 - Delete your account
 
@@ -318,7 +345,7 @@ Depending on your location, you may also have rights to:
 
 Withdrawing consent does not affect processing that lawfully occurred before withdrawal.
 
-Submit requests to **[SUPPORT EMAIL]**.
+Submit requests to **adrian.bucknell@gmail.com**.
 
 EEA and UK requests will normally receive a response within one month.
 
@@ -343,6 +370,7 @@ We use technical and organisational safeguards intended to protect personal info
 - Access controls
 - Database row-level security
 - Restricted administrative access
+- Payment processing handled by PCI-compliant providers (Stripe, Apple, Google)
 
 No service can guarantee complete security.
 
@@ -360,8 +388,6 @@ The latest version will show its effective date. We will provide appropriate not
 
 ## 15. Contact
 
-** Hapenin**  
-Operated by: **Adrian Bucknell**   
+**Hapenin**  
+Operated by: **Adrian Bucknell**  
 Email: **adrian.bucknell@gmail.com**
-
-
