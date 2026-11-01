@@ -1,393 +1,242 @@
 # Hapenin Privacy Policy
 
-**Last updated:** 6/08/2026  
-**Effective:** 6/08/2026
+**Last updated:** 1 November 2026 · **Effective:** 1 November 2026
 
-Hapenin is operated by **Adrian Bucknell**, Australia ("Hapenin", "we", "us").
+This policy explains what Hapenin collects, why, and what you can do about it. Hapenin is operated by **[YOUR FULL LEGAL NAME]** ("we", "us"), **[YOUR BUSINESS ADDRESS]**, Australia. We are the data controller for the information described here.
 
-This policy explains what personal information we collect, why we collect it, how it is used, and the choices available to you.
-
-**Privacy enquiries, requests, and complaints:** adrian.bucknell@gmail.com
+**Questions, requests, or complaints:** [SUPPORT EMAIL]
 
 ---
 
-## 1. How profile visibility works
+## How Hapenin handles visibility
 
-Hapenin uses different visibility levels.
+Most of the app still uses three layers of disclosure. Events and venue likes add narrower exceptions, described below.
 
-### Venue profiles
+**Anonymous layer.** At a venue, other users see demographic and interest signals only — for example age band, country of origin, relationship status, living situation, and interests. They do **not** see your real name, username, or profile photos.
 
-At venues, users may see profile information such as:
+**Username layer.** In venue chat, and in an event's group chat, you appear under your chosen username. Your real name and profile photos remain hidden in those chats.
 
-- Age band
-- Relationship status
-- Living situation
-- Interests
-- Country of origin, if the user has selected **Visible**
+**Friends layer.** Only **mutual Friends** — people you have both accepted — see your full profile, including your real name and profile photos.
 
-These profiles do not display the user's real name, username, or profile photos.
+Friendship is always mutual. Nobody can follow you or view your full profile without your acceptance. You can block users or hide your activity from specific people in **Settings → Privacy and Safety**. Blocks and hidden-activity choices also apply to venue likes, event discovery, and drink payments.
 
-### Venue chat
+**Events.** A public event is shown to people who match the filters the host set. A private event is shown only to the host and approved members. People who can see an event see the host's **first name and profile photo**, the event name, description, venue, time, and a summary of its filters. They also see the **first names** of approved members. **Profile photos of members** are shown only to viewers with an active **Hapenin+** subscription. If the event asks people to request access, the host sees each requester's first name and profile photo so they can decide. Approved members share a join code used at the venue to enter that event's group instead of the venue chat.
 
-In venue chat, users are identified by their username. Real names and profile photos remain hidden.
+**Venue likes.** A like lasts 7 days. The map shows a suburb pin, not the venue's exact coordinate. The people who liked a venue — their first names — are visible to you and to your accepted Friends, not to everyone nearby. Hapenin+ subscribers in that Friends audience also see profile photos and up to two shared interests or traits. Friends can be notified when you like a venue or create an event they are allowed to see.
 
-Country of origin is not displayed when the user has selected **Hidden**.
-
-### Friends
-
-Friendship requires mutual acceptance. Friends may see a fuller profile, including real name and profile photos.
-
-A country marked **Hidden** remains hidden from other users, including Friends.
-
-Users can remove Friends, block users, and hide their activity from specific users.
-
-### Buy Me a Drink
-
-When a user sends a drink, the recipient sees the **sender's first name**. This is not optional — all drink sends reveal who sent them. No message is attached to a drink.
+**Gender stays private.** We store gender so events can be filtered, and we do not put it on your profile, venue cards, or chats. If you host an event and set a gender filter, that filter is shown on the event (for example "Male only"). Hosts can only filter gender to their own value, so people who can see the event can infer it.
 
 ---
 
-## 2. Information we collect
+## What we collect
 
-### Account information
+| Data | Why | Required? |
+|------|-----|-----------|
+| **Email address and password** | To create and secure your account. Passwords are stored hashed; we never see them. | Yes (email sign-up) |
+| **Sign-in with Apple or Google** | Alternative sign-in. Apple or Google may share your email and, on first sign-in only, your name. We receive only what you authorise through that provider. | Optional |
+| **First and last name** | Account and profile management. Your full name is shown only to mutual Friends. Your first name is also shown in the event and venue-like cases described above. | Yes |
+| **Username** | Shown in venue chat, event chat, and to mutual Friends. Friends can search for you by username. | Yes |
+| **Date of birth** | Age verification (18+) and age-band matching. Also used to decide whether you match an event's age filter. We show an age band, not your date of birth. | Yes |
+| **Gender** (Male or Female) | Required so event hosts can limit an event to one gender, and so you only see gender-filtered events you match. Never shown on your profile, venue cards, or chats. You can update it in **Profile → Edit Profile → Profile details**. | Yes |
+| **Country / countries of origin** (up to 2) | Powers community and vibe matching at venues, and can be used as an event filter. You choose whether it appears on your profile (**Visible**) or stays hidden from other users (**Hidden**). Hidden countries are still used to personalise venue matching for you. Shown as demographic signals at the anonymous layer only when Visible — never linked to your name or username there. | No |
+| **Relationship status** (up to 2) | Powers vibe matching and can be used as an event filter. Shown as demographic signals at the anonymous layer. | Yes |
+| **Living situation** (e.g. local, visiting) | Powers vibe matching and can be used as an event filter. Shown as demographic signals at the anonymous layer. | Yes |
+| **Interests** (minimum 5) | Powers vibe matching and profile display. Shown at the anonymous layer. Hapenin+ viewers of a venue-like list may see up to two traits you share with them. | Yes |
+| **Profile photos** (3) | Your profile image, taken with the camera or chosen from your photo library. We upload only the photos you select. Visible to mutual Friends, and in the event and venue-like cases described above. | Yes |
+| **Bio** (up to 100 words) | Optional profile description. Visible to mutual Friends when provided. | No |
+| **Precise location (GPS)** | To show nearby venues, run venue scans, and verify physical presence when you **manually** check in. **When In Use** location is requested during onboarding. Hapenin does **not** use Always / background location for check-in. | When In Use: required for core features |
+| **Scan history** | The centre, radius, time, and result count of scans you run, so an active scan can refresh. | Collected when you scan |
+| **Check-in history** | To show your presence at a venue to other nearby users (only after you tap Check In and allow map presence), to mutual Friends, and to generate venue attendance figures. You can attach an active check-in to a live event you have joined; that check-in is visible to the event's members rather than to every patron at the venue. Active check-ins expire automatically after a timeout. Check-in is never automatic. | Collected when you check in |
+| **Venue likes** | To show suburb activity and tell your Friends which venues you have liked. A like expires after 7 days. | Collected when you like a venue |
+| **Events** | Name, description, venue, time, public or private, whether people must request to join, demographic filters, membership, and the join code. Used to run the event and show it to the right people. | Collected when you create, request, or join |
+| **Venue and event chat messages** | To deliver chat and investigate abuse reports. | Collected when you send messages |
+| **Friend connections** | To operate the mutual Friends system. | Collected when you connect |
+| **Blocked and restricted users lists** | To enforce your privacy choices (block / hide activity), including for likes, events, and drinks. | Optional |
+| **Content reports** | To review reports of abuse (profiles, messages, photos). | Collected when you submit a report |
+| **Feedback** | Rating, recommendation, and comments you send from **Settings → Feedback**, with your account email, so we can respond. | Optional |
+| **Purchase records for scan packs** | To credit your account. Apple processes payment via the App Store — we never receive your card details. | Collected when you purchase |
+| **Hapenin+ subscription** | To unlock Hapenin+ (including seeing member and liker photos, extra event filters, and higher like limits). We store whether you are subscribed, the product, the store, and when the period ends. Apple charges you. **RevenueCat** confirms the entitlement. We never receive your card details. | Collected when you subscribe |
+| **Drink payments** | Optional. If you buy or receive a drink, we store the sender, recipient, venue, amount, platform fee, Stripe payment id, status, and whether the recipient has read it. Both people must be checked in at the same venue. To be paid, you connect a Stripe account; we store the Stripe account id and your choice to accept drinks. Stripe processes the card. We never receive your card details. | Optional |
+| **Device push token and notification inbox** | To send notifications you have opted into, and to show them in the app. The inbox keeps the title, text, and destination of each notification. | Optional |
+| **In-app analytics events** | To produce venue statistics. When you scan, open a venue, check in, like a venue, request directions, send a chat message, or create, join, or message in an event, we store that action with your account id and a snapshot of your age band, relationship status, living situation, interests, and country of origin (and ethnicity, if one is already stored on your profile). | Collected when you do those actions |
+| **Crash and usage diagnostics** | To find and fix faults. | Collected automatically |
 
-Depending on how you register, we may collect:
-
-- Email address
-- Authentication credentials
-- Sign in with Apple or Google identifiers
-- First and last name
-- Username
-- Date of birth
-
-Passwords are managed by our authentication provider and are not stored by Hapenin in readable form.
-
-### Profile information
-
-We may collect:
-
-- Up to three profile photos
-- An optional profile biography
-- Relationship status
-- Living situation
-- Interests
-- Optional country or countries of origin
-
-We do not ask users to provide gender.
-
-### Country of origin
-
-Country of origin is optional. You can use Hapenin without providing it.
-
-If you provide country of origin:
-
-- It is used to personalise venue matching for you.
-- You can select **Visible** or **Hidden**.
-- **Visible** means it may appear on profile cards shown to other users.
-- **Hidden** means it is not displayed to other users, but Hapenin continues to use it to personalise venue matching for you.
-- You may remove it or withdraw your consent at any time.
-
-Removing country of origin stops it from being used in future country-based matching.
-
-### Location information
-
-With your permission, we collect precise location while you use the app to:
-
-- Find nearby venues
-- Verify that you are physically present before checking in
-- Provide venue scans and matching
-- Determine when you leave a venue
-
-Background or "Always" location is optional and is used only if you enable Auto Check-in.
-
-You can change location permissions through your device's settings.
-
-### Payment information
-
-**Scan-pack purchases** are processed by Apple (App Store) or Google (Google Play). We do not receive your complete payment-card details for these purchases.
-
-**Buy Me a Drink payments** are processed by **Stripe**. When you send or receive a drink payment:
-
-- We store a record of the transaction, including sender and recipient identifiers, the venue, the amount, and the Stripe payment intent identifier.
-- We do not store, process, or have access to your full payment-card number, expiry date, or CVV. This information is collected and processed directly by Stripe.
-- If you set up a Stripe Connect account to receive drink payments, we store your Stripe Connect account identifier to route payments to you. Stripe collects and processes your bank account details, identity verification documents, and other information required for its onboarding and regulatory obligations directly — Hapenin does not receive or store this information.
-
-### Activity and social information
-
-We may collect:
-
-- Current and previous check-ins
-- Friend connections and requests
-- Venue chat messages
-- Drink transaction records (sender, recipient, venue, amount, status)
-- Blocked and restricted user lists
-- Content reports
-- Scan-pack purchases
-- Device push-notification tokens
-- Crash and usage diagnostics
+We do **not** ask for faith. We do **not** ask for ethnicity during onboarding. If an ethnicity is already stored on your profile, it can be used to match ethnicity-filtered events and is included in the analytics snapshot above. It is not shown on your profile card. A host can only filter an event to an ethnicity on their own profile, and that label appears in the event's filter summary.
 
 ---
 
-## 3. Why we use your information
+## Identity profile and demographic data
 
-We use personal information to:
+During onboarding you may optionally provide country of origin (up to 2). You must provide gender, relationship status, living situation, interests, and profile photos to use Hapenin. Country powers venue vibe matching when provided. Gender is used only for events. Relationship, living, interests, and photos are essential to the service.
 
-- Create and secure your account
-- Verify that users are at least 18
-- Operate venue discovery and check-ins
-- Personalise venue matching
-- Display profile information according to your visibility choices
-- Deliver venue chat and Friend features
-- Process and record Buy Me a Drink payments between users
-- Reveal the sender's identity to the drink recipient
-- Send notifications you have enabled
-- Process scan-pack purchases
-- Investigate abuse and enforce our rules
-- Prevent fraud and protect account security
-- Diagnose faults and improve the service
-- Produce aggregated venue attendance and demographic statistics
-- Meet legal obligations
+**Country visibility**
 
-We do not sell personal information.
+- **Visible** — other users see your country on anonymous profile cards at venues (without your name, username, or photos).
+- **Hidden** — other users do not see your country on profile cards. Hapenin still uses your country to personalise venue matching for you.
+- You can skip country entirely, or change visibility and selections anytime from **Profile → Edit Profile**.
 
----
+**What others see**
 
-## 4. Sensitive information and country of origin
+- At the **anonymous layer**, other users see your demographic signals (including country, relationship status, living situation, interests, and age band) as **aggregate-style profile cards** — without your name, username, photos, or gender.
+- At the **username layer** (venue chat and event chat), others see your username plus the same demographic signals in venue context — still without your real name or photos.
+- Only **mutual Friends** see your full profile.
+- **Events** and **venue likes** show first names, and in the cases in the visibility section, profile photos, to people who are not necessarily Friends.
 
-Depending on the applicable law and how it is used, country of origin may reveal or relate to racial or ethnic origin and may therefore be considered sensitive or special-category information.
+**How you control this data**
 
-Providing country of origin is optional.
+- You can **update** your identity profile, gender, photos, and bio from your **Profile** at any time (tap **Edit Profile**).
+- You can **remove** individual identity selections (for example countries or interests) by editing your profile and saving the change.
+- You can **block** users or **hide your activity** from specific people in **Settings → Privacy and Safety**.
+- You can turn **Accept Drinks** off in Settings, which stops new drink payments to you.
+- You can **delete your entire account** (see below), which removes your identity data, including gender.
 
-Where required by law, including under the GDPR, we process country of origin only after you give explicit consent. This consent is separate from agreeing to our general Terms or Privacy Policy.
-
-You may:
-
-- Decline to provide country of origin
-- Keep it hidden from other users
-- Change its visibility
-- Remove it and withdraw consent
-
-Withdrawing consent does not affect your ability to use Hapenin's other features. It stops future country-based processing and matching after the information is removed.
-
-Selecting **Hidden** only controls display to other users. It does not withdraw consent to matching. To stop country-based matching, remove your country of origin or use the withdrawal control provided in your profile settings.
+We explain what each identity screen collects and why at the point of collection during onboarding. The gender screen explains that gender is not shown on your profile.
 
 ---
 
-## 5. Lawful bases
+## Events
 
-Where the GDPR or UK GDPR applies, we rely on the following lawful bases:
+You can create one open event at a time, dated up to 40 days ahead, at a venue. You choose a name, an optional description, a time (or "decide later"), whether the event is public or private, and whether people request to join or join immediately.
 
-### Contract
+Filters can cover gender, age range, relationship status, and living situation. Free accounts can set one filter category. Hapenin+ can set more than one. People who do not match a filter do not see that public event. Private events stay with the host and approved members.
 
-We process information necessary to:
+Hosting, joining, requesting to join, and event chat are optional. Leaving, declining, removing a member, ending, or cancelling an event updates membership and notifies the people affected.
 
-- Create and manage your account
-- Provide venue discovery and check-ins
-- Deliver venue chat and Friend features
-- Provide purchased scan packs
-- Process Buy Me a Drink payments, including recording transactions, routing payments via Stripe Connect, and revealing the sender's identity to the recipient
-
-### Consent
-
-We rely on consent for:
-
-- Optional country-of-origin processing
-- Optional background location and Auto Check-in
-- Push notifications
-- Setting up a Stripe Connect account to receive drink payments (opt-in)
-- Other optional features where consent is requested
-
-Where country of origin constitutes special-category data, we rely on explicit consent under Article 9(2)(a), in addition to Article 6(1)(a).
-
-### Legitimate interests
-
-We may rely on legitimate interests for:
-
-- Account and service security
-- Fraud prevention
-- Abuse investigations
-- Content moderation
-- Fault diagnosis
-- Improving reliability
-- Producing appropriately aggregated analytics
-
-We consider the effect of this processing on users' rights before relying on legitimate interests.
-
-### Legal obligations
-
-We process or retain information where required by applicable law, including payment and financial record-keeping obligations.
+Event records, memberships, the join code, event notifications, and event chat are deleted about **24 hours** after the event ends, is cancelled, or expires.
 
 ---
 
-## 6. Venue matching and analytics
+## Sensitive and special-category data
 
-Country-based matching compares the country information you voluntarily provide with information associated with venue activity.
+Hapenin may collect **country / countries of origin** when you choose to provide it. Depending on your jurisdiction, country of origin may be treated as sensitive or special-category data. **Ethnicity**, if already stored on a profile, is also special-category data where the law treats racial or ethnic origin that way. **Gender** is collected as described above. We do not treat gender as a public profile field.
 
-If your country is **Hidden**, it may still be used to personalise venue rankings and matching results shown to you. It is not displayed on your profile to other users.
+Country is **optional**. If you add it, you choose **Visible** or **Hidden** on your profile:
 
-We may provide venues with aggregated statistics, such as attendance totals or demographic distributions. We do not provide venues with:
+- **Hidden** means other users do not see your country on profile cards; we still use it for venue matching personalised to you.
+- **Visible** means other users see your country on anonymous profile cards (without your name or username).
 
-- Individual user profiles
-- Individual country selections
-- Names or usernames
-- Contact details
-- Payment or drink transaction details
-- Information intended to let a venue identify a particular user
+You can skip country, remove it, or change visibility anytime from your profile. Other demographic fields (gender, relationship status, living situation, interests) remain required for the service.
 
-We apply aggregation safeguards designed to reduce the risk of identifying individual users.
+Country is **never displayed against your real name or username** at the anonymous or username layer when shown. It contributes to demographic signals visible in venue scans and to match scoring only in anonymised form. On an event, a country or ethnicity filter the host chose appears as a filter summary, not as a label attached to each guest's name.
+
+If you do not want country processed, leave it blank or delete it from your profile. You can **delete your entire account** (see below), which removes all identity data.
 
 ---
 
-## 7. Who receives your information
+## Our lawful bases
 
-We use service providers to operate Hapenin, including:
+| Basis | What it covers |
+|-------|----------------|
+| **Contract** | Account creation, required identity profile (gender, relationship, living, interests, photos), check-ins, venue scans, venue likes, events, Friends, venue and event chat, scan-pack purchases, and Hapenin+ while you are subscribed. Without the required profile we cannot provide the app. |
+| **Consent** | Optional country of origin (when provided), map presence when you check in (Allow / Decline each time), push notifications, optional bio, and optional drink payments (including connecting Stripe and leaving Accept Drinks on). You can withdraw consent at any time in Settings or device Settings. |
+| **Legitimate interests** | Security, fraud and abuse prevention, content-moderation reports, fault diagnosis, and venue analytics built from the events described above. We have assessed these as not overriding your rights. Venues receive **aggregate** figures, not your identity. |
+| **Legal obligation** | Where we must retain or disclose data by law, including payment and tax records. |
 
-- **Supabase** — authentication, databases, file storage, and server functions
-- **Stripe** — payment processing for Buy Me a Drink, including Stripe Connect onboarding, identity verification, bank account details, and payment routing
-- **Google Firebase Cloud Messaging** — push notifications
-- **Google** — Google Sign-in and Places services
-- **Apple** — App Store distribution, Sign in with Apple, and in-app purchases
-
-These providers process information according to their own privacy terms and their agreements with us.
-
-Stripe processes payment-card details, bank account information, and identity verification documents directly. Hapenin does not receive or store this information. Stripe's privacy policy is available at [stripe.com/privacy](https://stripe.com/privacy).
-
-We may also disclose information:
-
-- When required by law
-- To protect users or the public from serious harm
-- To investigate fraud, abuse, or security incidents
-- As part of a business sale or reorganisation, subject to appropriate safeguards
+For EEA/UK users: required identity and demographic data (gender, relationship, living, interests, photos) is processed on the basis that it is **necessary for the performance of our contract** with you (GDPR Art. 6(1)(b)). **Optional country of origin**, when you choose to provide it, is processed on the basis of **explicit consent** (GDPR Art. 6(1)(a) and Art. 9(2)(a) where applicable). Ethnicity already stored on a profile, where it is special-category data, is processed on the same explicit-consent basis if you provided it, and otherwise only as this policy describes for matching and aggregate analytics. You may skip country or remove it without losing access to the app.
 
 ---
 
-## 8. International transfers
+## Who we share with
 
-Hapenin is operated from Australia. Our providers may process information in Australia, the United States, the European Economic Area, or other jurisdictions.
+We do **not** sell your personal data. We share it with processors who run parts of the service on our behalf:
 
-Where European or UK law requires transfer safeguards, we use recognised mechanisms such as Standard Contractual Clauses or other legally approved safeguards.
+| Processor | Purpose |
+|-----------|---------|
+| **Supabase** | Database, authentication, file storage, and server functions. |
+| **Google Firebase (FCM)** | Push notification delivery. |
+| **Google** | Sign-in with Google; Places API for nearby venue discovery; Geocoding to place venue activity on a suburb pin. |
+| **Apple** | App Store distribution, Sign in with Apple, and in-app purchases (scan packs and Hapenin+). |
+| **RevenueCat** | Hapenin+ entitlement. We send your account id. RevenueCat receives the App Store purchase so it can tell us whether Hapenin+ is active. |
+| **Stripe** | Drink payments and Stripe Connect payout accounts. Stripe receives the payer's card details, and for a connected account your email and account id. We receive payment status and the Stripe account id, not your card number. |
 
-You may request further information by contacting adrian.bucknell@gmail.com.
+### Other users
 
----
+Other users see the information described in **How Hapenin handles visibility**. They do not receive your email, date of birth, gender (except as inferred from a gender filter you chose to publish on an event), precise GPS coordinates, or payment details.
 
-## 9. Retention
+### Venue analytics
 
-We retain information only for as long as reasonably required for the purposes described in this policy.
+Where we provide venues with analytics, we share **aggregate** figures only — such as attendance counts and demographic distributions. Venues never receive your identity, individual profile, individual country selection, or contact details, and cannot single you out. The underlying analytics rows stay with us.
 
-Typical retention periods are:
-
-- **Account and profile:** while the account remains active
-- **Country of origin:** until removed, consent is withdrawn, or the account is deleted
-- **Active check-ins:** until checkout, departure, or automatic expiry
-- **Check-in history:** while the account remains active, unless deleted sooner
-- **Venue chat messages:** up to 24 hours
-- **Drink transaction records:** while the account remains active, or as required for financial record-keeping obligations
-- **Stripe Connect account identifier:** while the account remains active or until the user disconnects their payment account
-- **Content reports:** up to 12 months after resolution
-- **Purchase records:** up to 7 years for financial and tax record-keeping
-- **Diagnostics:** up to 12 months
-- **Deleted accounts:** personal information removed or de-identified within 30 days, unless longer retention is legally required
-
-Aggregated information that can no longer reasonably be associated with an individual may be retained longer.
+We may also disclose information where the law requires it, to protect someone from serious harm, to investigate fraud or abuse, or as part of a sale or reorganisation of the service, with appropriate safeguards.
 
 ---
 
-## 10. Account deletion
+## International transfers
 
-You can delete your account in:
-
-**Settings → Account Details → Delete Account**
-
-Account deletion permanently removes or de-identifies your:
-
-- Profile
-- Identity information
-- Country selections
-- Photos
-- Friend connections
-- Check-in information
-- Messages
-- Drink transaction records (sender and recipient identifiers are removed or de-identified)
-
-Deletion is completed within 30 days, except where information must be retained by law (for example, financial transaction records may be retained in anonymised form for tax and regulatory purposes).
-
-Unused scan credits are forfeited. Scan-pack refund requests are handled according to Apple's App Store or Google Play policies.
-
-Your Stripe Connect account is not automatically deleted when you delete your Hapenin account. You can close your Stripe account separately through Stripe's dashboard or by contacting Stripe support.
+We are based in Australia, and our processors may operate in **[REGIONS — e.g. United States, European Union]**. Australia does not benefit from a European Commission adequacy decision, so transfers of EEA and UK data to us rely on **Standard Contractual Clauses** (or equivalent safeguards). You can request a copy at the address above.
 
 ---
 
-## 11. Your choices and rights
+## How long we keep it
 
-You can:
-
-- Edit your profile information
-- Skip or remove country of origin
-- Change country visibility
-- Withdraw country-processing consent
-- Change location permissions
-- Disable notifications
-- Enable or disable receiving drink payments
-- Block or restrict users
-- Delete your account
-
-Depending on your location, you may also have rights to:
-
-- Access your personal information
-- Correct inaccurate information
-- Request deletion
-- Restrict processing
-- Object to processing
-- Receive portable information
-- Withdraw consent
-- Complain to a privacy regulator
-
-Withdrawing consent does not affect processing that lawfully occurred before withdrawal.
-
-Submit requests to **adrian.bucknell@gmail.com**.
-
-EEA and UK requests will normally receive a response within one month.
-
-Australian users may complain to the Office of the Australian Information Commissioner at [oaic.gov.au](https://www.oaic.gov.au).
+| Data | Retention |
+|------|-----------|
+| **Account and profile** (including gender and country) | While your account is active, or until you remove an optional field. |
+| **Active check-ins** | Until you check out, leave the venue, or the check-in expires. |
+| **Check-in history and scan history** | While your account is active, unless deleted earlier via account deletion. |
+| **Venue likes** | **7 days**, then removed. |
+| **Events, memberships, join codes, and event chat** | Until about **24 hours** after the event ends, is cancelled, or expires, then deleted. |
+| **Venue chat messages** | Up to **24 hours**, then automatically deleted. |
+| **Notification inbox** | **30 days**, then deleted. |
+| **Drink payments and Hapenin+ / scan-pack records** | While your account is active, and longer where tax, accounting, or payment-dispute rules require it. Stripe and Apple keep their own records under their policies. |
+| **Analytics events** | Kept to produce venue statistics. Account deletion removes the profile they point at. The event rows themselves may remain so historical aggregates stay intact. Venues do not receive the rows. |
+| **Diagnostics** | **[RETENTION PERIOD — e.g. 90 days]** |
+| **After account deletion** | Profile, identity data, photos, and the activity listed under **Deleting your account** are removed within **30 days**, except where law requires longer retention. Aggregate analytics already produced cannot be handed to a venue as your record. |
 
 ---
 
-## 12. Users under 18
+## Deleting your account
 
-Hapenin is intended only for users aged 18 or over.
+**In the app:** **Settings → Account Details → Delete Account.**
 
-We do not knowingly allow users under 18 to create accounts. Contact us if you believe a minor has created an account.
-
----
-
-## 13. Security
-
-We use technical and organisational safeguards intended to protect personal information, including:
-
-- Encryption in transit
-- Encryption at rest where supported
-- Access controls
-- Database row-level security
-- Restricted administrative access
-- Payment processing handled by PCI-compliant providers (Stripe, Apple, Google)
-
-No service can guarantee complete security.
-
-Where legally required, we will notify affected users and relevant regulators of qualifying data breaches.
+This is permanent. Your account, profile, identity data (including gender and country), photos, check-in history, scan history, friend connections, blocks, venue chat messages, feedback, and login are removed within 30 days. Event data follows the 24-hour event retention above. Venue likes expire on their 7-day timer. Unused scan credits are forfeited and are not refundable through us. Hapenin+ and other App Store charges are handled by Apple under its own policy. Stripe may retain payment and payout records after we delete your Hapenin account.
 
 ---
 
-## 14. Changes to this policy
+## Your rights
 
-We may update this policy as Hapenin changes.
+If you are in the **EEA or UK**, you can ask us to:
 
-The latest version will show its effective date. We will provide appropriate notice before material changes take effect.
+- Access a copy of your data
+- Correct inaccurate data
+- Delete your data
+- Restrict or object to certain processing
+- Receive your data in a portable format
+
+You can withdraw **consent-based** processing (push notifications, optional bio, optional country of origin, drink payments, and map-presence consent by declining check-in) at any time without affecting the lawfulness of processing before withdrawal.
+
+You can also:
+
+- Edit your profile, photos, bio, and gender
+- Skip or remove country of origin, and change whether it is visible
+- Change location permission in device Settings
+- Turn notification types off in **Settings → Notifications**
+- Turn **Accept Drinks** off, or decline to connect Stripe
+- Block users or hide your activity from specific people
+- Manage or cancel Hapenin+ through Apple
+
+Email **[SUPPORT EMAIL]** and we will respond within one month.
+
+You can also complain to your national data protection authority. In Australia, contact the Office of the Australian Information Commissioner ([oaic.gov.au](https://www.oaic.gov.au)).
 
 ---
 
-## 15. Contact
+## Age
 
-**Hapenin**  
-Operated by: **Adrian Bucknell**  
-Email: **adrian.bucknell@gmail.com**
+Hapenin is for users aged **18 and over**. We do not knowingly collect data from anyone under 18. If you believe a minor has an account, email us and we will remove it.
+
+---
+
+## Security
+
+Data is encrypted in transit and at rest. Access is restricted by row-level security so users can only reach data they are entitled to. No system is perfectly secure. If a qualifying breach occurs, we will notify you and the relevant authority within 72 hours where required by law.
+
+---
+
+## Changes
+
+We will update this page and revise the date above. For material changes we will notify you in the app before they take effect.
+
+---
+
+**Hapenin** · [SUPPORT EMAIL] · Support
