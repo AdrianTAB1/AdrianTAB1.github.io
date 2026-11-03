@@ -4,7 +4,7 @@
 
 This policy explains what Hapenin collects, why, and what you can do about it. Hapenin is operated by **[YOUR FULL LEGAL NAME]** ("we", "us"), **[YOUR BUSINESS ADDRESS]**, Australia. We are the data controller for the information described here.
 
-**Questions, requests, or complaints:** [SUPPORT EMAIL]
+**Questions, requests, or complaints:** adrian.bucknell@gmail.com
 
 ---
 
@@ -18,7 +18,7 @@ Most of the app still uses three layers of disclosure. Events and venue likes ad
 
 **Friends layer.** Only **mutual Friends** — people you have both accepted — see your full profile, including your real name and profile photos.
 
-Friendship is always mutual. Nobody can follow you or view your full profile without your acceptance. You can block users or hide your activity from specific people in **Settings → Privacy and Safety**. Blocks and hidden-activity choices also apply to venue likes, event discovery, and drink payments.
+Friendship is always mutual. Nobody can follow you or view your full profile without your acceptance. You can block users or hide your activity from specific people in **Settings → Privacy and Safety**. Blocks and hidden-activity choices also apply to venue likes and event discovery.
 
 **Events.** A public event is shown to people who match the filters the host set. A private event is shown only to the host and approved members. People who can see an event see the host's **first name and profile photo**, the event name, description, venue, time, and a summary of its filters. They also see the **first names** of approved members. **Profile photos of members** are shown only to viewers with an active **Hapenin+** subscription. If the event asks people to request access, the host sees each requester's first name and profile photo so they can decide. Approved members share a join code used at the venue to enter that event's group instead of the venue chat.
 
@@ -44,24 +44,34 @@ Friendship is always mutual. Nobody can follow you or view your full profile wit
 | **Interests** (minimum 5) | Powers vibe matching and profile display. Shown at the anonymous layer. Hapenin+ viewers of a venue-like list may see up to two traits you share with them. | Yes |
 | **Profile photos** (3) | Your profile image, taken with the camera or chosen from your photo library. We upload only the photos you select. Visible to mutual Friends, and in the event and venue-like cases described above. | Yes |
 | **Bio** (up to 100 words) | Optional profile description. Visible to mutual Friends when provided. | No |
-| **Precise location (GPS)** | To show nearby venues, run venue scans, and verify physical presence when you **manually** check in. **When In Use** location is requested during onboarding. Hapenin does **not** use Always / background location for check-in. | When In Use: required for core features |
+| **Precise location (GPS)** | To show nearby venues, run venue scans, and verify physical presence when you check in. **When In Use** location is requested during onboarding. If you turn on **Auto Check-in** in Settings, Hapenin also asks for **Always** (background) location so it can check you in and out when you arrive at or leave a nearby venue (see **Auto Check-in** below). | When In Use: required for core features. Always: optional, only for Auto Check-in |
 | **Scan history** | The centre, radius, time, and result count of scans you run, so an active scan can refresh. | Collected when you scan |
-| **Check-in history** | To show your presence at a venue to other nearby users (only after you tap Check In and allow map presence), to mutual Friends, and to generate venue attendance figures. You can attach an active check-in to a live event you have joined; that check-in is visible to the event's members rather than to every patron at the venue. Active check-ins expire automatically after a timeout. Check-in is never automatic. | Collected when you check in |
+| **Check-in history** | To show your presence at a venue to other nearby users (only when you allow map presence), to mutual Friends, and to generate venue attendance figures. You can attach an active check-in to a live event you have joined; that check-in is visible to the event's members rather than to every patron at the venue. Active check-ins expire automatically after a timeout. Check-ins happen when you tap Check In, or automatically if you have turned on Auto Check-in. | Collected when you check in |
 | **Venue likes** | To show suburb activity and tell your Friends which venues you have liked. A like expires after 7 days. | Collected when you like a venue |
 | **Events** | Name, description, venue, time, public or private, whether people must request to join, demographic filters, membership, and the join code. Used to run the event and show it to the right people. | Collected when you create, request, or join |
 | **Venue and event chat messages** | To deliver chat and investigate abuse reports. | Collected when you send messages |
 | **Friend connections** | To operate the mutual Friends system. | Collected when you connect |
-| **Blocked and restricted users lists** | To enforce your privacy choices (block / hide activity), including for likes, events, and drinks. | Optional |
+| **Blocked and restricted users lists** | To enforce your privacy choices (block / hide activity), including for likes and events. | Optional |
 | **Content reports** | To review reports of abuse (profiles, messages, photos). | Collected when you submit a report |
 | **Feedback** | Rating, recommendation, and comments you send from **Settings → Feedback**, with your account email, so we can respond. | Optional |
 | **Purchase records for scan packs** | To credit your account. Apple processes payment via the App Store — we never receive your card details. | Collected when you purchase |
 | **Hapenin+ subscription** | To unlock Hapenin+ (including seeing member and liker photos, extra event filters, and higher like limits). We store whether you are subscribed, the product, the store, and when the period ends. Apple charges you. **RevenueCat** confirms the entitlement. We never receive your card details. | Collected when you subscribe |
-| **Drink payments** | Optional. If you buy or receive a drink, we store the sender, recipient, venue, amount, platform fee, Stripe payment id, status, and whether the recipient has read it. Both people must be checked in at the same venue. To be paid, you connect a Stripe account; we store the Stripe account id and your choice to accept drinks. Stripe processes the card. We never receive your card details. | Optional |
 | **Device push token and notification inbox** | To send notifications you have opted into, and to show them in the app. The inbox keeps the title, text, and destination of each notification. | Optional |
 | **In-app analytics events** | To produce venue statistics. When you scan, open a venue, check in, like a venue, request directions, send a chat message, or create, join, or message in an event, we store that action with your account id and a snapshot of your age band, relationship status, living situation, interests, and country of origin (and ethnicity, if one is already stored on your profile). | Collected when you do those actions |
 | **Crash and usage diagnostics** | To find and fix faults. | Collected automatically |
 
 We do **not** ask for faith. We do **not** ask for ethnicity during onboarding. If an ethnicity is already stored on your profile, it can be used to match ethnicity-filtered events and is included in the analytics snapshot above. It is not shown on your profile card. A host can only filter an event to an ethnicity on their own profile, and that label appears in the event's filter summary.
+
+---
+
+## Auto Check-in
+
+Auto Check-in is **off by default**. You turn it on in **Settings → App Preferences**, and you can turn it off at any time there or by changing location permission in device Settings.
+
+- **How it works.** Hapenin registers small geofences (about 75 m) around the nearest venues saved in Hapenin, using your device's region monitoring. When your device enters one, Hapenin takes a single precise location reading to confirm the nearest venue and checks you in. When you leave that venue's geofence, Hapenin checks you out. If you are already checked in, it does not change your check-in.
+- **What it does not do.** Hapenin does not continuously track your location or run GPS in the background. Geofence and location readings are used only to decide check-in and check-out, and are not stored as a location history.
+- **Map presence.** When you turn on Auto Check-in, you choose once whether automatic check-ins show you on the map (**Show me on the map**, on by default). That choice applies to every automatic check-in until you change it. When it is off, your automatic check-ins are hidden from other patrons at the venue and do not notify your Friends.
+- **Notifications.** Each automatic check-in or check-out posts a local notification on your device so you always know it happened.
 
 ---
 
@@ -87,7 +97,6 @@ During onboarding you may optionally provide country of origin (up to 2). You mu
 - You can **update** your identity profile, gender, photos, and bio from your **Profile** at any time (tap **Edit Profile**).
 - You can **remove** individual identity selections (for example countries or interests) by editing your profile and saving the change.
 - You can **block** users or **hide your activity** from specific people in **Settings → Privacy and Safety**.
-- You can turn **Accept Drinks** off in Settings, which stops new drink payments to you.
 - You can **delete your entire account** (see below), which removes your identity data, including gender.
 
 We explain what each identity screen collects and why at the point of collection during onboarding. The gender screen explains that gender is not shown on your profile.
@@ -128,7 +137,7 @@ If you do not want country processed, leave it blank or delete it from your prof
 | Basis | What it covers |
 |-------|----------------|
 | **Contract** | Account creation, required identity profile (gender, relationship, living, interests, photos), check-ins, venue scans, venue likes, events, Friends, venue and event chat, scan-pack purchases, and Hapenin+ while you are subscribed. Without the required profile we cannot provide the app. |
-| **Consent** | Optional country of origin (when provided), map presence when you check in (Allow / Decline each time), push notifications, optional bio, and optional drink payments (including connecting Stripe and leaving Accept Drinks on). You can withdraw consent at any time in Settings or device Settings. |
+| **Consent** | Optional country of origin (when provided), map presence when you check in (Allow / Decline each time for manual check-ins; set once in Settings for Auto Check-in), Always location for Auto Check-in, push notifications, and optional bio. You can withdraw consent at any time in Settings or device Settings. |
 | **Legitimate interests** | Security, fraud and abuse prevention, content-moderation reports, fault diagnosis, and venue analytics built from the events described above. We have assessed these as not overriding your rights. Venues receive **aggregate** figures, not your identity. |
 | **Legal obligation** | Where we must retain or disclose data by law, including payment and tax records. |
 
@@ -147,8 +156,6 @@ We do **not** sell your personal data. We share it with processors who run parts
 | **Google** | Sign-in with Google; Places API for nearby venue discovery; Geocoding to place venue activity on a suburb pin. |
 | **Apple** | App Store distribution, Sign in with Apple, and in-app purchases (scan packs and Hapenin+). |
 | **RevenueCat** | Hapenin+ entitlement. We send your account id. RevenueCat receives the App Store purchase so it can tell us whether Hapenin+ is active. |
-| **Stripe** | Drink payments and Stripe Connect payout accounts. Stripe receives the payer's card details, and for a connected account your email and account id. We receive payment status and the Stripe account id, not your card number. |
-
 ### Other users
 
 Other users see the information described in **How Hapenin handles visibility**. They do not receive your email, date of birth, gender (except as inferred from a gender filter you chose to publish on an event), precise GPS coordinates, or payment details.
@@ -178,7 +185,7 @@ We are based in Australia, and our processors may operate in **[REGIONS — e.g.
 | **Events, memberships, join codes, and event chat** | Until about **24 hours** after the event ends, is cancelled, or expires, then deleted. |
 | **Venue chat messages** | Up to **24 hours**, then automatically deleted. |
 | **Notification inbox** | **30 days**, then deleted. |
-| **Drink payments and Hapenin+ / scan-pack records** | While your account is active, and longer where tax, accounting, or payment-dispute rules require it. Stripe and Apple keep their own records under their policies. |
+| **Hapenin+ and scan-pack records** | While your account is active, and longer where tax, accounting, or payment-dispute rules require it. Apple and RevenueCat keep their own records under their policies. |
 | **Analytics events** | Kept to produce venue statistics. Account deletion removes the profile they point at. The event rows themselves may remain so historical aggregates stay intact. Venues do not receive the rows. |
 | **Diagnostics** | **[RETENTION PERIOD — e.g. 90 days]** |
 | **After account deletion** | Profile, identity data, photos, and the activity listed under **Deleting your account** are removed within **30 days**, except where law requires longer retention. Aggregate analytics already produced cannot be handed to a venue as your record. |
@@ -189,7 +196,7 @@ We are based in Australia, and our processors may operate in **[REGIONS — e.g.
 
 **In the app:** **Settings → Account Details → Delete Account.**
 
-This is permanent. Your account, profile, identity data (including gender and country), photos, check-in history, scan history, friend connections, blocks, venue chat messages, feedback, and login are removed within 30 days. Event data follows the 24-hour event retention above. Venue likes expire on their 7-day timer. Unused scan credits are forfeited and are not refundable through us. Hapenin+ and other App Store charges are handled by Apple under its own policy. Stripe may retain payment and payout records after we delete your Hapenin account.
+This is permanent. Your account, profile, identity data (including gender and country), photos, check-in history, scan history, friend connections, blocks, venue chat messages, feedback, and login are removed within 30 days. Event data follows the 24-hour event retention above. Venue likes expire on their 7-day timer. Unused scan credits are forfeited and are not refundable through us. Deleting your account does not cancel Hapenin+; cancel it in your Apple Account subscriptions. Hapenin+ and other App Store charges are handled by Apple under its own policy.
 
 ---
 
@@ -203,7 +210,7 @@ If you are in the **EEA or UK**, you can ask us to:
 - Restrict or object to certain processing
 - Receive your data in a portable format
 
-You can withdraw **consent-based** processing (push notifications, optional bio, optional country of origin, drink payments, and map-presence consent by declining check-in) at any time without affecting the lawfulness of processing before withdrawal.
+You can withdraw **consent-based** processing (push notifications, optional bio, optional country of origin, map-presence consent by declining check-in or turning off **Show me on the map**, and Auto Check-in by turning it off in Settings) at any time without affecting the lawfulness of processing before withdrawal.
 
 You can also:
 
@@ -211,11 +218,10 @@ You can also:
 - Skip or remove country of origin, and change whether it is visible
 - Change location permission in device Settings
 - Turn notification types off in **Settings → Notifications**
-- Turn **Accept Drinks** off, or decline to connect Stripe
 - Block users or hide your activity from specific people
 - Manage or cancel Hapenin+ through Apple
 
-Email **[SUPPORT EMAIL]** and we will respond within one month.
+Email **adrian.bucknell@gmail.com** and we will respond within one month.
 
 You can also complain to your national data protection authority. In Australia, contact the Office of the Australian Information Commissioner ([oaic.gov.au](https://www.oaic.gov.au)).
 
@@ -239,4 +245,4 @@ We will update this page and revise the date above. For material changes we will
 
 ---
 
-**Hapenin** · [SUPPORT EMAIL] · Support
+**Hapenin** · adrian.bucknell@gmail.com · Support
